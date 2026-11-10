@@ -1,0 +1,5 @@
+{
+  "name": "claude-session-journal",
+  "owner": { "name": "TheOmnilord" },
+  "plugins": [{ "name": "session-journal", "source": "./" }]
+}
