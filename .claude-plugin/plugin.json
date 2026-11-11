@@ -2,5 +2,6 @@
   "name": "session-journal",
   "version": "0.1.0",
   "description": "Off by default. /journal on writes the running session to an append-only Markdown journal Claude can recover from after a crash.",
+  "license": "MIT",
   "types": "./types/index.d.ts"
 }
