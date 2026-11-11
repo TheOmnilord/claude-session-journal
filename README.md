@@ -46,13 +46,10 @@ folder is not caught.
 
 ## Install
 
-At the prompt of a terminal session:
+The mod runs inside Claude Code. The repository is public, so no GitHub
+sign-in is needed.
 
-```
-/plugin install session-journal --marketplace TheOmnilord/claude-session-journal
-```
-
-Answer `y` to add the marketplace, then pick a scope (user is the default).
+### Claude Code is already installed
 
 From a shell:
 
@@ -60,6 +57,47 @@ From a shell:
 claude plugin install session-journal --marketplace TheOmnilord/claude-session-journal
 ```
 
-In the desktop app, where `/plugin` does not run: click + next to the prompt
-box, then Plugins, Add marketplace with `TheOmnilord/claude-session-journal`,
-then Add plugin.
+Or at the prompt of a terminal session:
+
+```
+/plugin install session-journal --marketplace TheOmnilord/claude-session-journal
+```
+
+Answer `y` to add the marketplace, then pick a scope (user, the default, makes
+it available in every session on that computer, the desktop app included).
+
+In the desktop app, where `/plugin` does not run: click **+** next to the
+prompt box, then **Plugins**, **Add marketplace** with
+`TheOmnilord/claude-session-journal`, then **Add plugin**.
+
+### Claude Code is not installed
+
+**Option 1: the desktop app (no terminal).** Install the Claude desktop app
+from https://claude.ai/download and sign in; its **Code** tab is Claude Code.
+Then add the mod as above: **+** next to the prompt box, **Plugins**,
+**Add marketplace** with `TheOmnilord/claude-session-journal`, **Add plugin**.
+
+**Option 2: the command line.** Install Claude Code.
+
+Windows (PowerShell):
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+macOS or Linux:
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+Open a new terminal, run `claude` once to sign in, exit, then install the mod:
+
+```
+claude plugin install session-journal --marketplace TheOmnilord/claude-session-journal
+```
+
+### Then
+
+Start a new session and type `/journal on`, or `/journal auto on` once to
+start the journal in every session on that computer.
